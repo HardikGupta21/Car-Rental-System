@@ -112,21 +112,15 @@ class hatchback:public car
 			std::cout<<left<<std::setw(20)<<"";
 			cout<<"_________\n\n\n";
 			
-			for(int i=1;i<=cfigo;i++)
-			{
-				std::cout<<left<<std::setw(20)<<"";
-				cout<<"|"B_RED"FORD FIGO"RESET"\n\n";
-			}
-			for(int i=1;i<critz;i++)
-			{
-				std::cout<<left<<std::setw(20)<<"";
-				cout<<"|"B_BLU BOLD"RITZ"RESET"\n\n";
-			}
-			for(int i=1;i<cbrio-1;i++)
-			{
-				std::cout<<left<<std::setw(20)<<"";
-				cout<<"|"B_MAG BOLD"BRIO"RESET"\n\n";
-			}
+			std::cout<<left<<std::setw(20)<<"";
+			cout<<"|"B_RED"FORD FIGO"RESET"\n\n";
+			
+			std::cout<<left<<std::setw(20)<<"";
+			cout<<"|"B_BLU BOLD"RITZ"RESET"\n\n";
+			
+			std::cout<<left<<std::setw(20)<<"";
+			cout<<"|"B_MAG BOLD"BRIO"RESET"\n\n";
+			
 			std::cout<<left<<std::setw(20)<<"";
 			cout<<"_________\n";
 			std::cout<<left<<std::setw(20)<<"";
@@ -143,7 +137,7 @@ class hatchback:public car
 			{
 				return;
 			}
-			else
+			else if(ch=='Y'||ch=='y')
 			{
 				cout<<"\n";
 				cust_details();
@@ -190,6 +184,11 @@ class hatchback:public car
 					default: cout<<"\t"RED"Enter a valid input "RESET"\n";
 						 break;
 				}
+			}
+			else
+			{
+				cout<<"\tChoose 'Y' for 'Yes' and 'N' for 'No'\n";
+				hatchback::buy_car();
 			}
 		}
 		
@@ -242,17 +241,17 @@ class SUV:public car
 			std::cout<<left<<std::setw(20)<<"";
 			cout<<"_________\n\n\n";
 			
-			for(int i=1;i<cfortuner-1;i++)
+			for(int i=1;i<=cfortuner;i++)
 			{
 				std::cout<<left<<std::setw(20)<<"";
 				cout<<"|"B_RED"FORTUNER"RESET"\n\n";
 			}
-			for(int i=1;i<cinnova-2;i++)
+			for(int i=1;i<=cinnova;i++)
 			{
 				std::cout<<left<<std::setw(20)<<"";
 				cout<<"|"B_BLU BOLD"INNOVA"RESET"\n\n";
 			}
-			for(int i=1;i<cscorpio;i++)
+			for(int i=1;i<=cscorpio;i++)
 			{
 				std::cout<<left<<std::setw(20)<<"";
 				cout<<"|"B_MAG BOLD"SCORPIO"RESET"\n\n";
@@ -272,7 +271,7 @@ class SUV:public car
 			{
 				return;
 			}
-			else
+			else if(ch=='Y'||ch=='y')
 			{
 				cout<<"\n";
 				cust_details();
@@ -325,6 +324,11 @@ class SUV:public car
 						break;
 				}
 			}
+			else
+			{
+				cout<<"\tChoose 'Y' for 'Yes' and 'N' for 'No'\n";
+				SUV::buy_car();
+			}
 		}
 };
 class Sedan:public car
@@ -375,7 +379,7 @@ class Sedan:public car
 			std::cout<<left<<std::setw(20)<<"";
 			cout<<"_________\n\n\n";
 			
-			for(int i=1;i<cindigo;i++)
+			for(int i=1;i<=cindigo;i++)
 			{
 				std::cout<<left<<std::setw(20)<<"";
 				cout<<"|"B_RED"INDIGO"RESET"\n\n";
@@ -385,7 +389,7 @@ class Sedan:public car
 				std::cout<<left<<std::setw(20)<<"";
 				cout<<"|"B_BLU BOLD"ETHIOS"RESET"\n\n";
 			}
-			for(int i=1;i<cverna-1;i++)
+			for(int i=1;i<=cverna;i++)
 			{
 				std::cout<<left<<std::setw(20)<<"";
 				cout<<"|"B_MAG BOLD"VERNA"RESET"\n\n";
@@ -398,19 +402,19 @@ class Sedan:public car
 			cout<<"\n";
 		}
 		void buy_car()
-		{
 			
+		{
 			cout<<"\tDo you wanna rent a "CYAN BOLD"Sedan"RESET" car? If yes press 'Y' or press 'N' : ";
 			cin>>ch;
 			if(ch=='N'||ch=='n')
 			{
 				return;
 			}
-			else
+			else if(ch=='Y'||ch=='y')
 			{
 				cout<<"\n";
 				cust_details();
-				 cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+				cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
 				cout<<"\tEnter \n\t1.To rent Indigo\n\t2.To rent Ethios \n\t3.To rent Verna \n\t";
 				cin>>n;
 				cout<<"\tEnter the number of days : ";
@@ -451,13 +455,18 @@ class Sedan:public car
 							cout<<"\t"CYAN BOLD"Total amount = "RESET<<3800*days<<endl<<endl;
 							trent+=3800*days;
 							cverna--;
-							 cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+							cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
 						}	
 						break;	
 					default: cout<<"\t"RED"Enter a valid input "RESET"\n";
 					 	cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
 						break;
 				}
+			}
+			else
+			{
+				cout<<"\tPlease choose 'Y' for 'Yes' and 'N' for 'No'\n";
+				Sedan::buy_car();
 			}
 		}
 };
