@@ -69,62 +69,58 @@ class hatchback:public car
 	public:
 		void get_data()
 		{
-			std::cout<<left<<std::setw(60)<<"\t"YEL BOLD"------------------------------------------------------------------------------------"RESET<<"\n";
+			cout<<left<<setw(60)<<"\t"YEL BOLD"------------------------------------------------------------------------------------"RESET<<"\n";
 			
-			std::cout<<left<<std::setw(16)<<"";
-			std::cout<<left<<std::setw(15)<<"";
-			std::cout<<left<<std::setw(31)<<RED"FORD FIGO"RESET;
-			std::cout<<left<<std::setw(33)<<BLU BOLD"RITZ"RESET;
-			std::cout<<left<<std::setw(23)<<MAG BOLD"BRIO"RESET;
+			cout<<left<<setw(16)<<"";
+			cout<<left<<setw(15)<<"";
+			cout<<left<<setw(31)<<RED"FORD FIGO"RESET;
+			cout<<left<<setw(33)<<BLU BOLD"RITZ"RESET;
+			cout<<left<<setw(23)<<MAG BOLD"BRIO"RESET;
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"MODEL NO"RESET;
-			std::cout<<left<<std::setw(20)<<"5687";
-			std::cout<<left<<std::setw(20)<<"7980";
-			std::cout<<left<<std::setw(20)<<"3434";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"MODEL NO"RESET;
+			cout<<left<<setw(20)<<"5687";
+			cout<<left<<setw(20)<<"7980";
+			cout<<left<<setw(20)<<"3434";
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"MILEAGE"RESET;
-			std::cout<<left<<std::setw(20)<<"12";
-			std::cout<<left<<std::setw(20)<<"11";
-			std::cout<<left<<std::setw(20)<<"14";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"MILEAGE"RESET;
+			cout<<left<<setw(20)<<"12";
+			cout<<left<<setw(20)<<"11";
+			cout<<left<<setw(20)<<"14";
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"COLOR"RESET;
-			std::cout<<left<<std::setw(20)<<"Red";
-			std::cout<<left<<std::setw(20)<<"Blue";
-			std::cout<<left<<std::setw(20)<<"Violet";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"COLOR"RESET;
+			cout<<left<<setw(20)<<"Red";
+			cout<<left<<setw(20)<<"Blue";
+			cout<<left<<setw(20)<<"Violet";
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"COST"RESET;
-			std::cout<<left<<std::setw(20)<<"1000/day";
-			std::cout<<left<<std::setw(20)<<"1500/day";
-			std::cout<<left<<std::setw(20)<<"1800/day";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"COST"RESET;
+			cout<<left<<setw(20)<<"1000/day";
+			cout<<left<<setw(20)<<"1500/day";
+			cout<<left<<setw(20)<<"1800/day";
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+			cout<<left<<setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET"\n";
 			
 		}
 		void display()
 		{
-			std::cout<<std::setw(60)<<"\t"GRN"--------------------------DETAILS OF HATCHBACK CARS--------------------------"RESET"\n\n";
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n";
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n\n\n";
-			
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"|"B_RED"FORD FIGO"RESET"\n\n";
-			
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"|"B_BLU BOLD"RITZ"RESET"\n\n";
-			
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"|"B_MAG BOLD"BRIO"RESET"\n\n";
-			
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n";
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n";
+			cout<<setw(60)<<"\t"GRN"--------------------------DETAILS OF HATCHBACK CARS--------------------------"RESET"\n\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n\n\n";
+				cout<<left<<setw(20)<<"";
+				cout<<"|"B_RED"FORD FIGO"RESET"\n\n";
+				cout<<left<<setw(20)<<"";
+				cout<<"|"B_BLU BOLD"RITZ"RESET"\n\n";
+			    cout<<left<<setw(20)<<"";
+				cout<<"|"B_MAG BOLD"BRIO"RESET"\n\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n";
 			
 			cout<<"\n";
 		}		
@@ -136,7 +132,7 @@ class hatchback:public car
 			if(ch=='N'||ch=='n')
 			{
 				return;
-			}
+			} 
 			else if(ch=='Y'||ch=='y')
 			{
 				cout<<"\n";
@@ -194,72 +190,191 @@ class hatchback:public car
 		
 };
 				
+class Sedan:public car
+{
+	public:
+		void get_data()
+		{
+			cout<<left<<setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET;
+			cout<<"\n";
+			
+			cout<<left<<setw(16)<<"";
+			cout<<left<<setw(15)<<"";
+			cout<<left<<setw(31)<<RED"INDIGO"RESET;
+			cout<<left<<setw(33)<<BLU BOLD"ETHIOS"RESET;
+			cout<<left<<setw(23)<<MAG BOLD"VERNA"RESET;
+			cout<<"\n";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"MODEL NO"RESET;
+			cout<<left<<setw(20)<<"5687";
+			cout<<left<<setw(20)<<"7980";
+			cout<<left<<setw(20)<<"3434";
+			cout<<"\n";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"MILEAGE"RESET;
+			cout<<left<<setw(20)<<"15";
+			cout<<left<<setw(20)<<"12";
+			cout<<left<<setw(20)<<"11";
+			cout<<"\n";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"COLOR"RESET;
+			cout<<left<<setw(20)<<"White";
+			cout<<left<<setw(20)<<"Silver";
+			cout<<left<<setw(20)<<"Black";
+			cout<<"\n";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"COST"RESET;
+			cout<<left<<setw(20)<<"3000/day";
+			cout<<left<<setw(20)<<"3500/day";
+			cout<<left<<setw(20)<<"3800/day";
+			cout<<"\n";
+			cout<<left<<setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+		}
+		void display()
+		{
+			cout<<setw(60)<<"\t"GRN"--------------------------------DETAILS OF SEDAN CARS------------------------------"RESET"\n\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n\n\n";
+				cout<<left<<setw(20)<<"";
+				cout<<"|"B_RED"INDIGO"RESET"\n\n";
+				cout<<left<<setw(20)<<"";
+				cout<<"|"B_BLU BOLD"ETHIOS"RESET"\n\n";
+				cout<<left<<setw(20)<<"";
+				cout<<"|"B_MAG BOLD"VERNA"RESET"\n\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n";
+			
+			cout<<"\n";
+		}
+		void buy_car()
+		{
+			
+			cout<<"\tDo you wanna rent a "CYAN BOLD"Sedan"RESET" car? If yes press 'Y' or press 'N' : ";
+			cin>>ch;
+			if(ch=='N'||ch=='n')
+			{
+				return;
+			}
+			else if(ch=='Y'||ch=='y')
+			{
+				cout<<"\n";
+				cust_details();
+				 cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+				cout<<"\tEnter \n\t1.To rent Indigo\n\t2.To rent Ethios \n\t3.To rent Verna \n\t";
+				cin>>n;
+				cout<<"\tEnter the number of days : ";
+				cin>>days;
+				cout<<"\n";
+				switch(n)
+				{
+					case 1: if(cindigo==0)
+						{
+							cout<<"\t"RED"Sorry no cars available in this category, Pick another car"RESET"\n";
+						}
+						else
+						{	tcar=4;
+							cout<<"\t"CYAN BOLD"Total amount = "RESET<<3000*days<<endl<<endl;
+							trent+=3000*days;
+							cindigo--;
+							 cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+						}	
+						break;
+					case 2: if(cethios==0)
+						{
+							cout<<"\t"RED"Sorry no cars available in this category, Pick another car"RESET"\n";
+						}
+						else
+						{	tcar=5;
+							cout<<"\t"CYAN BOLD"Total amount = "RESET<<3500*days<<endl<<endl;
+							trent+=3500*days;
+							cethios--;
+							 cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+						}	
+						break;	
+					case 3: if(cverna==0)
+						{
+							cout<<"\t"RED"Sorry no cars available in this category, Pick another car"RESET"\n";
+						}
+						else
+						{	tcar=6;
+							cout<<"\t"CYAN BOLD"Total amount = "RESET<<3800*days<<endl<<endl;
+							trent+=3800*days;
+							cverna--;
+							 cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+						}	
+						break;	
+					default: cout<<"\t"RED"Enter a valid input "RESET"\n";
+					 	cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+						break;
+				}
+			}
+			else
+			{
+				cout<<"\tChoose 'Y' for 'Yes' and 'N' for 'No'\n";
+				Sedan::buy_car();
+			}
+		}
+};
 class SUV:public car
 {
 	public:
 		void get_data()
 		{
-			std::cout<<left<<std::setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET;
+			cout<<left<<setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET;
 			cout<<"\n";
-			std::cout<<left<<std::setw(16)<<"";
-			std::cout<<left<<std::setw(15)<<"";
-			std::cout<<left<<std::setw(31)<<RED"FORTUNER"RESET;
-			std::cout<<left<<std::setw(33)<<BLU BOLD"INNOVA"RESET;
-			std::cout<<left<<std::setw(23)<<MAG BOLD"SCORPIO"RESET;
+			cout<<left<<setw(16)<<"";
+			cout<<left<<setw(15)<<"";
+			cout<<left<<setw(31)<<RED"FORTUNER"RESET;
+			cout<<left<<setw(33)<<BLU BOLD"INNOVA"RESET;
+			cout<<left<<setw(23)<<MAG BOLD"SCORPIO"RESET;
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"MODEL NO"RESET;
-			std::cout<<left<<std::setw(20)<<"5687";
-			std::cout<<left<<std::setw(20)<<"7980";
-			std::cout<<left<<std::setw(20)<<"3434";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"MODEL NO"RESET;
+			cout<<left<<setw(20)<<"5687";
+			cout<<left<<setw(20)<<"7980";
+			cout<<left<<setw(20)<<"3434";
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"MILEAGE"RESET;
-			std::cout<<left<<std::setw(20)<<"17";
-			std::cout<<left<<std::setw(20)<<"15";
-			std::cout<<left<<std::setw(20)<<"13";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"MILEAGE"RESET;
+			cout<<left<<setw(20)<<"17";
+			cout<<left<<setw(20)<<"15";
+			cout<<left<<setw(20)<<"13";
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"COLOR"RESET;
-			std::cout<<left<<std::setw(20)<<"Red";
-			std::cout<<left<<std::setw(20)<<"Blue";
-			std::cout<<left<<std::setw(20)<<"Violet";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"COLOR"RESET;
+			cout<<left<<setw(20)<<"Red";
+			cout<<left<<setw(20)<<"Blue";
+			cout<<left<<setw(20)<<"Violet";
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"COST"RESET;
-			std::cout<<left<<std::setw(20)<<"4800/day";
-			std::cout<<left<<std::setw(20)<<"4500/day";
-			std::cout<<left<<std::setw(20)<<"4000/day";
+			cout<<left<<setw(20)<<"";
+			cout<<left<<setw(20)<<CYAN"COST"RESET;
+			cout<<left<<setw(20)<<"4800/day";
+			cout<<left<<setw(20)<<"4500/day";
+			cout<<left<<setw(20)<<"4000/day";
 			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET"\n";
+			cout<<left<<setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET"\n";
 		}
 		void display()
 		{
-			std::cout<<std::setw(60)<<"\t"GRN"--------------------------------DETAILS OF SUV CARS--------------------------"RESET"\n\n";
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n";
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n\n\n";
-			
-			for(int i=1;i<=cfortuner;i++)
-			{
-				std::cout<<left<<std::setw(20)<<"";
+			cout<<setw(60)<<"\t"GRN"--------------------------------DETAILS OF SUV CARS--------------------------"RESET"\n\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n\n\n";
+			    cout<<left<<setw(20)<<"";
 				cout<<"|"B_RED"FORTUNER"RESET"\n\n";
-			}
-			for(int i=1;i<=cinnova;i++)
-			{
-				std::cout<<left<<std::setw(20)<<"";
+				cout<<left<<setw(20)<<"";
 				cout<<"|"B_BLU BOLD"INNOVA"RESET"\n\n";
-			}
-			for(int i=1;i<=cscorpio;i++)
-			{
-				std::cout<<left<<std::setw(20)<<"";
+				cout<<left<<setw(20)<<"";
 				cout<<"|"B_MAG BOLD"SCORPIO"RESET"\n\n";
-			}
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n";
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n";
+			cout<<left<<setw(20)<<"";
+			cout<<"___________________________\n";
 			
 			cout<<"\n";
 		}		
@@ -331,147 +446,9 @@ class SUV:public car
 			}
 		}
 };
-class Sedan:public car
-{
-	public:
-		void get_data()
-		{
-			std::cout<<left<<std::setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET;
-			cout<<"\n";
-			
-			std::cout<<left<<std::setw(16)<<"";
-			std::cout<<left<<std::setw(15)<<"";
-			std::cout<<left<<std::setw(31)<<RED"INDIGO"RESET;
-			std::cout<<left<<std::setw(33)<<BLU BOLD"ETHIOS"RESET;
-			std::cout<<left<<std::setw(23)<<MAG BOLD"VERNA"RESET;
-			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"MODEL NO"RESET;
-			std::cout<<left<<std::setw(20)<<"5687";
-			std::cout<<left<<std::setw(20)<<"7980";
-			std::cout<<left<<std::setw(20)<<"3434";
-			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"MILEAGE"RESET;
-			std::cout<<left<<std::setw(20)<<"15";
-			std::cout<<left<<std::setw(20)<<"12";
-			std::cout<<left<<std::setw(20)<<"11";
-			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"COLOR"RESET;
-			std::cout<<left<<std::setw(20)<<"White";
-			std::cout<<left<<std::setw(20)<<"Silver";
-			std::cout<<left<<std::setw(20)<<"Black";
-			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"";
-			std::cout<<left<<std::setw(20)<<CYAN"COST"RESET;
-			std::cout<<left<<std::setw(20)<<"3000/day";
-			std::cout<<left<<std::setw(20)<<"3500/day";
-			std::cout<<left<<std::setw(20)<<"3800/day";
-			cout<<"\n";
-			std::cout<<left<<std::setw(20)<<"\t"YEL BOLD"-------------------------------------------------------------------------------------"RESET"\n";
-		}
-		void display()
-		{
-			std::cout<<std::setw(60)<<"\t"GRN"--------------------------------DETAILS OF SEDAN CARS------------------------------"RESET"\n\n";
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n";
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n\n\n";
-			
-			for(int i=1;i<=cindigo;i++)
-			{
-				std::cout<<left<<std::setw(20)<<"";
-				cout<<"|"B_RED"INDIGO"RESET"\n\n";
-			}
-			for(int i=1;i<=cethios;i++)
-			{
-				std::cout<<left<<std::setw(20)<<"";
-				cout<<"|"B_BLU BOLD"ETHIOS"RESET"\n\n";
-			}
-			for(int i=1;i<=cverna;i++)
-			{
-				std::cout<<left<<std::setw(20)<<"";
-				cout<<"|"B_MAG BOLD"VERNA"RESET"\n\n";
-			}
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n";
-			std::cout<<left<<std::setw(20)<<"";
-			cout<<"_________\n";
-			
-			cout<<"\n";
-		}
-		void buy_car()
-			
-		{
-			cout<<"\tDo you wanna rent a "CYAN BOLD"Sedan"RESET" car? If yes press 'Y' or press 'N' : ";
-			cin>>ch;
-			if(ch=='N'||ch=='n')
-			{
-				return;
-			}
-			else if(ch=='Y'||ch=='y')
-			{
-				cout<<"\n";
-				cust_details();
-				cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
-				cout<<"\tEnter \n\t1.To rent Indigo\n\t2.To rent Ethios \n\t3.To rent Verna \n\t";
-				cin>>n;
-				cout<<"\tEnter the number of days : ";
-				cin>>days;
-				cout<<"\n";
-				switch(n)
-				{
-					case 1: if(cindigo==0)
-						{
-							cout<<"\t"RED"Sorry no cars available in this category, Pick another car"RESET"\n";
-						}
-						else
-						{	tcar=4;
-							cout<<"\t"CYAN BOLD"Total amount = "RESET<<3000*days<<endl<<endl;
-							trent+=3000*days;
-							cindigo--;
-							 cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
-						}	
-						break;
-					case 2: if(cethios==0)
-						{
-							cout<<"\t"RED"Sorry no cars available in this category, Pick another car"RESET"\n";
-						}
-						else
-						{	tcar=5;
-							cout<<"\t"CYAN BOLD"Total amount = "RESET<<3500*days<<endl<<endl;
-							trent+=3500*days;
-							cethios--;
-							 cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
-						}	
-						break;	
-					case 3: if(cverna==0)
-						{
-							cout<<"\t"RED"Sorry no cars available in this category, Pick another car"RESET"\n";
-						}
-						else
-						{	tcar=6;
-							cout<<"\t"CYAN BOLD"Total amount = "RESET<<3800*days<<endl<<endl;
-							trent+=3800*days;
-							cverna--;
-							cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
-						}	
-						break;	
-					default: cout<<"\t"RED"Enter a valid input "RESET"\n";
-					 	cout<<"\t"MAG BOLD"-------------------------------------------------------------------------------------"RESET"\n";
-						break;
-				}
-			}
-			else
-			{
-				cout<<"\tPlease choose 'Y' for 'Yes' and 'N' for 'No'\n";
-				Sedan::buy_car();
-			}
-		}
-};
 
-class rent:virtual public hatchback,virtual public Sedan,virtual public SUV
+
+class rent: public hatchback, public Sedan, public SUV
 {
 	public:
 		int m;
@@ -485,17 +462,17 @@ class rent:virtual public hatchback,virtual public Sedan,virtual public SUV
 			switch(m)
 			{
 				case 1: hatchback::display();
-					hatchback::get_data();
-					hatchback::buy_car();
-					break;
+						hatchback::get_data();
+						hatchback::buy_car();
+						break;
 				case 2: Sedan::display();
-					Sedan::get_data();
-					Sedan::buy_car();
-					break;
+						Sedan::get_data();
+						Sedan::buy_car();
+						break;
 				case 3: SUV::display();
-					SUV::get_data();
-					SUV::buy_car();
-					break;
+						SUV::get_data();
+						SUV::buy_car();
+						break;
 			}
 		}
 		
@@ -511,17 +488,17 @@ int main()
 	
 	ofstream file;
 	file.open("Customer_details.txt");
-	file<<"\n\n\t*********** DriveOut Rentals ***********\n";
+	file<<"\n\n\t****************************** DriveOut Rentals ******************************\n";
 	file<<"\t                                  RECEIPT                                    \n\n";   
 	file<<"\t CUSTOMER DETAILS: \n\n";
 	file<<"\t CUSTOMER NAME : "<<first_name<<"  "<<last_name<<endl<<endl;
 	file<<"\t CONTACT : "<<contact<<endl<<endl;
-	file<<"\t____________________________\n\n";
+	file<<"\t__________________________________________________________________________________\n\n";
 	file<<left<<setw(20)<<"\t TYPE OF CAR ";
 	file<<left<<setw(20)<<" DAYS ";
 	file<<left<<setw(20)<<" COST ";
 	file<<left<<setw(17)<<" TOTAL  \n";
-	file<<"____________________________\n\n\t";
+	file<<"__________________________________________________________________________________\n\n\t";
 
 	for(;;)
 	{
@@ -609,7 +586,7 @@ int main()
 			    ifstream infile ("Customer_details.txt");
 			    if (infile.is_open())
 			    {
-				while ( getline (infile, linesread) )
+				while (getline(infile, linesread))
 				{
 				    cout << linesread << endl;
 				}
